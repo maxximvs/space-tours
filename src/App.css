@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.outer-background {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../assets/images/cropped-1920-1080-978193.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  /* filter: blur(2px); */
+}
+
+main {
+  width: calc(100% - 8rem);
+  height: calc(100vh - 10rem);
+  min-height: 40rem;
+  max-width: 1280px;
+  /* border: 1px solid #000; */
+  box-shadow: 0 0 50px 5px #000000b8;
+  margin: 5rem auto;
+  z-index: 3;
+  position: relative;
+
+  background-image: url('../assets/images/cropped-1920-1080-978193.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

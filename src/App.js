@@ -1,10 +1,17 @@
 import './App.css';
 
+import Navigation from './components/Navigation/Navigation';
+import Welcome from './components/Welcome/Welcome';
+
 function App() {
   return (
-    <div className='App'>
-      <h1>test</h1>
-    </div>
+    <>
+      <div className='outer-background'></div>
+      <main>
+        <Navigation />
+        <Welcome />
+      </main>
+    </>
   );
 }
 
