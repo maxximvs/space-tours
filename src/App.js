@@ -8,7 +8,7 @@ import Welcome from './components/Welcome/Welcome';
 import Contact from './components/Contact/Contact';
 
 import DestinationsPage from './pages/DestinationsPage/DestinationsPage';
-import LoginPage from './pages/LoginPage';
+import LoginPage from './pages/LoginPage/LoginPage';
 
 function App() {
   return (
