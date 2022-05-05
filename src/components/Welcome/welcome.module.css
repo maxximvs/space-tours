@@ -1,0 +1,60 @@
+.welcome {
+  color: white;
+  outline: 1px solid white;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.astronautPicture {
+  outline: 1px solid white;
+  height: 400px;
+  width: 230px;
+
+  animation: float 3000ms;
+  animation-iteration-count: 10;
+}
+
+.astronautPicture img {
+  height: 100%;
+  width: 100%;
+  filter: sepia(100%) hue-rotate(190deg) saturate(300%);
+}
+
+.mainInfo {
+  outline: 1px solid white;
+
+  width: 500px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainInfo h1 {
+  font-size: 4rem;
+  margin-top: 3rem;
+  margin-right: 4rem;
+  font-weight: 300;
+}
+
+.mainInfo p {
+  line-height: 1;
+  width: 250px;
+  margin-bottom: 5rem;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
