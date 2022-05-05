@@ -1,6 +1,8 @@
 import React from 'react';
 import './navigation.module.css';
 
+import { Link } from 'react-router-dom';
+
 const Navigation = () => {
   return (
     <nav>
@@ -9,10 +11,10 @@ const Navigation = () => {
       </div>
       <ul>
         <li>
-          <a href='/'>Destinations</a>
+          <Link to='/destinations'>Destinations</Link>
         </li>
         <li>
-          <a href='/'>Log In</a>
+          <Link to='/login'>Log In</Link>
         </li>
       </ul>
     </nav>
