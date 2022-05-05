@@ -1,0 +1,14 @@
+main {
+  outline: 1px solid white;
+
+  display: grid;
+  grid-template-rows: 4rem auto auto;
+}
+
+.destinations {
+  outline: 1px solid white;
+}
+
+.destination-info {
+  outline: 1px solid white;
+}
