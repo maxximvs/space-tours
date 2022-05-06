@@ -8,9 +8,9 @@ const LoginPage = () => {
   return (
     <>
       <div className='card-background'>
-        <main className={styles.login}>
+        <div className={styles.main}>
           <Navigation />
-        </main>
+        </div>
       </div>
     </>
   );

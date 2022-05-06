@@ -8,9 +8,10 @@ const DestinationsPage = () => {
   return (
     <>
       <div className='card-background'>
-        <main className={styles.destinations}>
+        <div className={styles.main}>
           <Navigation />
-        </main>
+          <div className={styles.destinations}></div>
+        </div>
       </div>
     </>
   );

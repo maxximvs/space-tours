@@ -1,12 +1,14 @@
-main {
+.main {
   outline: 1px solid white;
 
   display: grid;
-  grid-template-rows: 4rem auto auto;
+  grid-template-rows: 4rem 6rem auto;
 }
 
 .destinations {
   outline: 1px solid white;
+
+  display: flex;
 }
 
 .destination-info {
