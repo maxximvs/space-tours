@@ -1,43 +1,53 @@
 .main {
-  /* outline: 1px solid white; */
+  outline: 1px solid white;
 
   display: grid;
-  grid-template-rows: 4rem 16rem auto;
+  grid-template-rows: 4rem 18rem auto;
   height: 100%;
 }
 
 .destinations {
-  /* outline: 1px solid white; */
+  outline: 1px solid white;
 
   display: flex;
   justify-content: space-around;
 
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .destinations img {
-  /* outline: 1px solid white; */
+  outline: 1px solid white;
 }
 
 .destinationInfo {
-  /* outline: 1px solid white; */
+  outline: 1px solid white;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-top: 2.5rem;
+  position: relative;
 }
 
 .destinationInfo img {
   height: 75%;
   width: 50%;
 
-  position: relative;
+  /* position: relative; */
 }
 
-.destinationInfoText {
+/* .destinationInfoText {
   position: absolute;
-}
+} */
 
 .hidden {
   display: none;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 58px;
+  right: 330px;
+  cursor: pointer;
 }
