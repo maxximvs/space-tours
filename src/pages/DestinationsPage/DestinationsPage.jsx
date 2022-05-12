@@ -7,7 +7,7 @@ import destinationsData from '../../data/destinationsData';
 import Navigation from '../../components/Navigation/Navigation';
 import planetInfo from '../../assets/images/planet-info.png';
 
-import { FaTimes } from 'react-icons/fa';
+import { FaTimes, FaArrowRight } from 'react-icons/fa';
 // import planet1 from '../../assets/images/planet-1.png';
 // import planet2 from '../../assets/images/planet-2.png';
 // import planet3 from '../../assets/images/planet-3.png';
@@ -22,7 +22,7 @@ const DestinationsPage = () => {
     // @todo - display the correct planet info based on the id thats passed in
   };
 
-  const toggleDestinationInfo = () => {
+  const hideDestinationInfo = () => {
     setShowDestinationInfo((prevState) => !prevState);
   };
 
@@ -46,12 +46,20 @@ const DestinationsPage = () => {
               showDestinationInfo ? '' : styles.hidden
             }`}
           >
-            <img src={planetInfo} alt='' />
+            <div className={styles.imgContainer}>
+              <img src={planetInfo} alt='' />
+            </div>
             <FaTimes
               className={styles.closeBtn}
-              onClick={toggleDestinationInfo}
+              onClick={hideDestinationInfo}
             />
-            <div className={styles.destinationInfoText}></div>
+            <FaArrowRight className={styles.arrowRightBtn} />
+            <div className={styles.destinationInfoText}>
+              <p>Planet: </p>
+              <p>First Discovered: </p>
+              <p>Discovered By: </p>
+              <p>Planet Info: </p>
+            </div>
           </div>
         </div>
       </div>

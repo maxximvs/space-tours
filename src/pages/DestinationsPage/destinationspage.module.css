@@ -27,27 +27,44 @@
   align-items: center;
 
   margin-top: 2.5rem;
+
   position: relative;
 }
 
-.destinationInfo img {
+.destinationInfo .imgContainer {
+  outline: 1px solid white;
   height: 75%;
   width: 50%;
 
-  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .destinationInfoText {
+.destinationInfo .imgContainer img {
+  height: 100%;
+  width: 100%;
+}
+
+.destinationInfoText {
   position: absolute;
-} */
+}
 
 .hidden {
   display: none;
 }
 
-.closeBtn {
+.closeBtn,
+.arrowRightBtn {
   position: absolute;
-  top: 58px;
-  right: 330px;
+  top: 14%;
+  right: 26%;
   cursor: pointer;
+}
+
+.arrowRightBtn {
+  width: 25px;
+  height: 25px;
+  top: 78%;
+  right: 26%;
 }
