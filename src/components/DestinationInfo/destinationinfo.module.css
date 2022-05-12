@@ -1,0 +1,58 @@
+.destinationInfo {
+  /* outline: 1px solid white; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2.5rem;
+
+  position: relative;
+}
+
+.destinationInfo .imgContainer {
+  outline: 1px solid white;
+  height: 75%;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.destinationInfo .imgContainer img {
+  height: 100%;
+  width: 100%;
+}
+
+.destinationInfoText {
+  outline: 1px solid yellow;
+
+  position: absolute;
+}
+
+.destinationInfoText .ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.closeBtn,
+.arrowRightBtn {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.arrowRightBtn {
+  width: 20px;
+  height: 20px;
+  top: 89%;
+  right: 2%;
+}
