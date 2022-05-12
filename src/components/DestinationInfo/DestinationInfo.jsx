@@ -6,9 +6,9 @@ import { FaTimes, FaArrowRight } from 'react-icons/fa';
 
 const DestinationInfo = ({
   destinations,
+  destinationId,
   isDestinationInfoShown,
-  toggleDestinationInfo,
-  destinationId
+  toggleDestinationInfo
 }) => {
   return (
     <div

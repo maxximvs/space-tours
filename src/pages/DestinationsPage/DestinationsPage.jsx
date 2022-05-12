@@ -6,6 +6,7 @@ import destinationsData from '../../data/destinationsData';
 
 import Navigation from '../../components/Navigation/Navigation';
 import DestinationInfo from '../../components/DestinationInfo/DestinationInfo';
+import Destinations from '../../components/Destinations/Destinations';
 
 const DestinationsPage = () => {
   const [destinations, setDestinations] = useState(destinationsData);
@@ -28,16 +29,10 @@ const DestinationsPage = () => {
       <div className='card-background'>
         <div className={styles.main}>
           <Navigation />
-          <div className={styles.destinations}>
-            {destinations.map((destination) => (
-              <div key={destination.id}>
-                <img
-                  src={destination.img}
-                  onClick={() => clickHandler(destination.id)}
-                />
-              </div>
-            ))}
-          </div>
+          <Destinations
+            destinations={destinations}
+            clickHandler={clickHandler}
+          />
           <DestinationInfo
             destinations={destinations}
             isDestinationInfoShown={isDestinationInfoShown}
