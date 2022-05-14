@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../shared-styles/shared.css';
 import styles from './destinationspage.module.css';
 
@@ -12,6 +12,14 @@ const DestinationsPage = () => {
   const [destinations, setDestinations] = useState(destinationsData);
   const [isDestinationInfoShown, setIsDestinationInfoShown] = useState(false);
   const [destinationId, setDestinationId] = useState('');
+
+  useEffect(() => {
+    destinations.forEach((destination) => {
+      if (destination.id === destinationId) {
+        setIsDestinationInfoShown(true);
+      }
+    });
+  }, [destinationId]);
 
   const toggleDestinationInfo = () => {
     setIsDestinationInfoShown((prevState) => !prevState);

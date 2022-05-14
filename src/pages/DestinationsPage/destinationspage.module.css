@@ -5,16 +5,3 @@
   grid-template-rows: 4rem 18rem auto;
   height: 100%;
 }
-
-.destinations {
-  outline: 1px solid white;
-
-  display: flex;
-  justify-content: space-around;
-
-  margin-top: 2.5rem;
-}
-
-.destinations img {
-  outline: 1px solid white;
-}
