@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <nav>
-      <div className='brand-logo'>
+    <nav className={styles.nav}>
+      <div className={styles.brandLogo}>
         <NavLink to='/'>Brand Logo</NavLink>
       </div>
-      <ul>
-        <li>
+      <ul className={styles.ul}>
+        <li className={styles.li}>
           <NavLink
             to='/destinations'
             className={(navData) => (navData.isActive ? styles.active : null)}
@@ -18,7 +18,7 @@ const Navigation = () => {
             Destinations
           </NavLink>
         </li>
-        <li>
+        <li className={styles.li}>
           <NavLink
             to='/login'
             className={(navData) => (navData.isActive ? styles.active : null)}

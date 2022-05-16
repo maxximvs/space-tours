@@ -1,4 +1,4 @@
-nav {
+.nav {
   outline: 1px solid #fff;
 
   padding-left: 4rem;
@@ -10,14 +10,14 @@ nav {
   height: 4rem;
 }
 
-ul {
+.ul {
   outline: 1px solid #fff;
 
   list-style: none;
   display: flex;
 }
 
-li {
+.li {
   padding: 0 2rem;
 }
 
