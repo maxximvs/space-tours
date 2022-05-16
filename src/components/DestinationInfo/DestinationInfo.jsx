@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './destinationinfo.module.css';
 
 import planetInfo from '../../assets/images/planet-info.png';
 import { FaTimes, FaArrowRight } from 'react-icons/fa';
 
-const DestinationInfo = ({
-  destinations,
-  destinationId,
-  isDestinationInfoShown,
-  toggleDestinationInfo
-}) => {
+import DestinationsContext from '../../context/DestinationsContext';
+
+const DestinationInfo = () => {
+  const {
+    destinations,
+    isDestinationInfoShown,
+    toggleDestinationInfo,
+    destinationId
+  } = useContext(DestinationsContext);
+
   return (
     <div
       className={`${styles.destinationInfo} ${

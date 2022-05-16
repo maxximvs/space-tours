@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './destinations.module.css';
 
-const Destinations = ({ destinations, clickHandler }) => {
+import DestinationsContext from '../../context/DestinationsContext';
+
+const Destinations = () => {
+  const { destinations, clickHandler } = useContext(DestinationsContext);
+
   return (
     <div className={styles.destinations}>
       {destinations.map((destination) => (

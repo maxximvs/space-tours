@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../../shared-styles/shared.css';
 import styles from './destinationspage.module.css';
-
-import destinationsData from '../../data/destinationsData';
 
 import Navigation from '../../components/Navigation/Navigation';
 import DestinationInfo from '../../components/DestinationInfo/DestinationInfo';
@@ -11,42 +9,13 @@ import Destinations from '../../components/Destinations/Destinations';
 import { DestinationsProvider } from '../../context/DestinationsContext';
 
 const DestinationsPage = () => {
-  const [destinations, setDestinations] = useState(destinationsData);
-  const [isDestinationInfoShown, setIsDestinationInfoShown] = useState(false);
-  const [destinationId, setDestinationId] = useState('');
-
-  useEffect(() => {
-    destinations.forEach((destination) => {
-      if (destination.id === destinationId) {
-        setIsDestinationInfoShown(true);
-      }
-    });
-  }, [destinationId]);
-
-  const toggleDestinationInfo = () => {
-    setIsDestinationInfoShown((prevState) => !prevState);
-  };
-
-  const clickHandler = (id) => {
-    toggleDestinationInfo();
-    setDestinationId(id);
-  };
-
   return (
     <DestinationsProvider>
       <div className='card-background'>
         <div className={styles.main}>
           <Navigation />
-          <Destinations
-            destinations={destinations}
-            clickHandler={clickHandler}
-          />
-          <DestinationInfo
-            destinations={destinations}
-            isDestinationInfoShown={isDestinationInfoShown}
-            toggleDestinationInfo={toggleDestinationInfo}
-            destinationId={destinationId}
-          />
+          <Destinations />
+          <DestinationInfo />
         </div>
       </div>
     </DestinationsProvider>
