@@ -8,6 +8,8 @@ import Navigation from '../../components/Navigation/Navigation';
 import DestinationInfo from '../../components/DestinationInfo/DestinationInfo';
 import Destinations from '../../components/Destinations/Destinations';
 
+import { DestinationsProvider } from '../../context/DestinationsContext';
+
 const DestinationsPage = () => {
   const [destinations, setDestinations] = useState(destinationsData);
   const [isDestinationInfoShown, setIsDestinationInfoShown] = useState(false);
@@ -31,7 +33,7 @@ const DestinationsPage = () => {
   };
 
   return (
-    <>
+    <DestinationsProvider>
       <div className='card-background'>
         <div className={styles.main}>
           <Navigation />
@@ -47,7 +49,7 @@ const DestinationsPage = () => {
           />
         </div>
       </div>
-    </>
+    </DestinationsProvider>
   );
 };
 
