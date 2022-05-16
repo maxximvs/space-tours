@@ -8,6 +8,8 @@
   margin-top: 2.5rem;
 
   position: relative;
+
+  animation: fadeIn 0.2s ease-in;
 }
 
 .destinationInfo .imgContainer {
@@ -40,6 +42,9 @@
 
 .hidden {
   display: none;
+
+  /* animation: fadeOut 0.2s ease-in forwards; */
+  /* this runs the animation right away when the page loads */
 }
 
 .closeBtn,
@@ -56,3 +61,26 @@
   top: 89%;
   right: 2%;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes fadeOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  99% {
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+} */
