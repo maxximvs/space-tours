@@ -24,6 +24,7 @@ const DestinationInfo = () => {
         <img src={planetInfo} alt='' />
         <FaTimes className={styles.closeBtn} onClick={toggleDestinationInfo} />
         <FaArrowRight className={styles.arrowRightBtn} />
+        <button className={styles.journeyBtn}>Book a journey</button>
         <div className={styles.destinationInfoText}>
           {destinations
             .filter((destination) => destination.id === destinationId)
@@ -32,7 +33,7 @@ const DestinationInfo = () => {
                 <li>Planet: {destination.planetName}</li>
                 <li>First discovered: {destination.firstDiscovered}</li>
                 <li>Discovered by: {destination.discoveredBy}</li>
-                <li>Description: {destination.planetDescription}</li>
+                <li>{destination.planetDescription}</li>
               </ul>
             ))}
         </div>
