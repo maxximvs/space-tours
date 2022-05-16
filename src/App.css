@@ -62,3 +62,12 @@ main {
   /* position: relative; */
   height: 100%;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
