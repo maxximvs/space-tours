@@ -28,8 +28,6 @@ const DestinationsPage = () => {
   const clickHandler = (id) => {
     toggleDestinationInfo();
     setDestinationId(id);
-
-    // @todo - close planet info if the same planet is clicked on, change planet info if a different planet is clicked on
   };
 
   return (
