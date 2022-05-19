@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import styles from './destinations.module.css';
 
-import DestinationsContext from '../../context/DestinationsContext';
+import DestinationsContext from '../../context/destinations/DestinationsContext';
 
 const Destinations = () => {
   const { destinations, clickHandler } = useContext(DestinationsContext);

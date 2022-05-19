@@ -4,7 +4,7 @@ import styles from './destinationinfo.module.css';
 import planetInfo from '../../assets/images/planet-info.png';
 import { FaTimes, FaArrowRight } from 'react-icons/fa';
 
-import DestinationsContext from '../../context/DestinationsContext';
+import DestinationsContext from '../../context/destinations/DestinationsContext';
 
 const DestinationInfo = () => {
   const {
