@@ -35,7 +35,7 @@ function App() {
         ></Route>
         <Route path='/destinations' element={<DestinationsPage />} />
         {/* ./profile will be a private route later and for now it will take us to the SignIn and SignUp pages so we can take care of those two before */}
-        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/profile' element={<SignInPage />} />
         <Route path='/sign-in' element={<SignInPage />} />
         <Route path='/sign-up' element={<SignUpPage />} />
         <Route path='/forgot-password' element={<ForgotPasswordPage />} />

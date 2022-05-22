@@ -20,7 +20,7 @@ const Navigation = () => {
         </li>
         <li className={styles.li}>
           <NavLink
-            to='/profile'
+            to='/sign-in'
             className={(navData) => (navData.isActive ? styles.active : null)}
           >
             Profile
