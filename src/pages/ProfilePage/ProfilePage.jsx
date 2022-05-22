@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../shared-styles/shared.css';
-import styles from './loginpage.module.css';
+import styles from './profilepage.module.css';
 
 import Navigation from '../../components/Navigation/Navigation';
 

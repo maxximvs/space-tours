@@ -8,7 +8,7 @@ import Welcome from './components/Welcome/Welcome';
 import Contact from './components/Contact/Contact';
 
 import DestinationsPage from './pages/DestinationsPage/DestinationsPage';
-import LoginPage from './pages/LoginPage/LoginPage';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
           }
         ></Route>
         <Route path='/destinations' element={<DestinationsPage />} />
-        <Route path='/login' element={<LoginPage />} />
+        <Route path='/profile' element={<ProfilePage />} />
       </Routes>
     </Router>
   );
