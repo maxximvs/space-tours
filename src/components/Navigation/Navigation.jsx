@@ -23,7 +23,7 @@ const Navigation = () => {
             to='/profile'
             className={(navData) => (navData.isActive ? styles.active : null)}
           >
-            Log In
+            Profile
           </NavLink>
         </li>
       </ul>
