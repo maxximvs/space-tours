@@ -1,0 +1,105 @@
+.main {
+  outline: 1px solid white;
+
+  display: grid;
+  grid-template-rows: 4rem auto;
+  height: 100%;
+
+  color: white;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageHeader {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.pageBody {
+  /* outline: 1px solid white; */
+  width: 75%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nameInputDiv {
+  /* outline: 2px solid yellow; */
+}
+
+.emailInputDiv {
+  /* outline: 2px solid yellow; */
+}
+
+.passwordInputDiv {
+  /* outline: 2px solid yellow; */
+
+  position: relative;
+  width: 22rem;
+}
+
+.nameInput,
+.emailInput,
+.passwordInput {
+  height: 2rem;
+  width: 20rem;
+  border-radius: 3px;
+  border: none;
+}
+
+.emailInput:focus,
+.passwordInput:focus {
+  outline: none;
+}
+
+.emailInput {
+  margin-top: 1rem;
+}
+
+.passwordInput {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.showPasswordIcon {
+  /* outline: 1px solid red; */
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.forgotPasswordLink {
+  font-size: 0.9rem;
+}
+
+.signUpBar {
+  /* outline: 1px solid white; */
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.signUpText {
+  font-size: 1.5rem;
+}
+
+.signUpButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.arrowRightBtn {
+  margin-right: 2rem;
+}
+
+.signInLink {
+  margin-top: 2rem;
+}
