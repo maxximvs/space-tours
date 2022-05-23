@@ -13,6 +13,9 @@ import SignInPage from './pages/SignInPage/SignInPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage/ForgotPasswordPage';
 
+import { ToastContainer, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   return (
     <Router>
@@ -35,11 +38,24 @@ function App() {
         ></Route>
         <Route path='/destinations' element={<DestinationsPage />} />
         {/* ./profile will be a private route later and for now it will take us to the SignIn and SignUp pages so we can take care of those two before */}
-        <Route path='/profile' element={<SignInPage />} />
+        <Route path='/profile' element={<ProfilePage />} />
         <Route path='/sign-in' element={<SignInPage />} />
         <Route path='/sign-up' element={<SignUpPage />} />
         <Route path='/forgot-password' element={<ForgotPasswordPage />} />
       </Routes>
+      <ToastContainer
+        theme='dark'
+        transition={Slide}
+        position='top-center'
+        autoClose={2000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </Router>
   );
 }
