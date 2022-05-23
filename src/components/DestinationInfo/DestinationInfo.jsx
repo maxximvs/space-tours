@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import styles from './destinationinfo.module.css';
 
-import planetInfo from '../../assets/images/planet-info.png';
+import planetInfoBg from '../../assets/images/planet-info.png';
 import { FaTimes, FaArrowRight } from 'react-icons/fa';
 
 import DestinationsContext from '../../context/destinations/DestinationsContext';
@@ -21,7 +21,7 @@ const DestinationInfo = () => {
       }`}
     >
       <div className={styles.imgContainer}>
-        <img src={planetInfo} alt='' />
+        <img src={planetInfoBg} alt='' />
         <FaTimes className={styles.closeBtn} onClick={toggleDestinationInfo} />
         <FaArrowRight className={styles.arrowRightBtn} />
         <button className={styles.journeyBtn}>Book a journey</button>
