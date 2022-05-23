@@ -4,8 +4,11 @@ import styles from './signinpage.module.css';
 import '../../shared-styles/shared.css';
 
 import { FaEye, FaEyeSlash, FaArrowRight } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 import Navigation from '../../components/Navigation/Navigation';
+
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 const SignInPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -24,6 +27,24 @@ const SignInPage = () => {
     }));
   };
 
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const auth = getAuth();
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      if (userCredential.user) {
+        navigate('/');
+      }
+    } catch (error) {
+      toast.error('Incorrect User Credentials.');
+    }
+  };
+
   return (
     <div className='card-background'>
       <div className={styles.main}>
@@ -31,7 +52,7 @@ const SignInPage = () => {
         <div className={styles.page}>
           <div className={styles.pageHeader}>Welcome back.</div>
           <div className={styles.pageBody}>
-            <form>
+            <form onSubmit={onSubmit}>
               <div className={styles.emailInputDiv}>
                 <input
                   type='email'
