@@ -21,7 +21,7 @@
 }
 
 .pageBody {
-  /* outline: 1px solid white; */
+  outline: 1px solid white;
   width: 75%;
 
   display: flex;
@@ -30,15 +30,15 @@
 }
 
 .nameInputDiv {
-  /* outline: 2px solid yellow; */
+  outline: 2px solid yellow;
 }
 
 .emailInputDiv {
-  /* outline: 2px solid yellow; */
+  outline: 2px solid yellow;
 }
 
 .passwordInputDiv {
-  /* outline: 2px solid yellow; */
+  outline: 2px solid yellow;
 
   position: relative;
   width: 22rem;
@@ -68,7 +68,7 @@
 }
 
 .showPasswordIcon {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   vertical-align: middle;
   margin-left: 0.5rem;
 }
@@ -78,7 +78,7 @@
 }
 
 .signUpBar {
-  /* outline: 1px solid white; */
+  outline: 1px solid white;
 
   display: flex;
   justify-content: space-between;
