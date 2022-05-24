@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import Welcome from './components/Welcome/Welcome';
 import Contact from './components/Contact/Contact';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 import DestinationsPage from './pages/DestinationsPage/DestinationsPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
@@ -37,8 +38,9 @@ function App() {
           }
         ></Route>
         <Route path='/destinations' element={<DestinationsPage />} />
-        {/* ./profile will be a private route later and for now it will take us to the SignIn and SignUp pages so we can take care of those two before */}
-        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/profile' element={<PrivateRoute />}>
+          <Route path='/profile' element={<ProfilePage />} />
+        </Route>
         <Route path='/sign-in' element={<SignInPage />} />
         <Route path='/sign-up' element={<SignUpPage />} />
         <Route path='/forgot-password' element={<ForgotPasswordPage />} />
