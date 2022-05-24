@@ -7,6 +7,7 @@ import { FaEye, FaEyeSlash, FaArrowRight } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 import Navigation from '../../components/Navigation/Navigation';
+import OAuth from '../../components/OAuth/OAuth';
 
 import {
   getAuth,
@@ -125,7 +126,7 @@ const SignUpPage = () => {
               </div>
             </form>
 
-            {/* Google OAuth */}
+            <OAuth />
 
             <Link to='/sign-in' className={styles.signInLink}>
               Sign In Instead
