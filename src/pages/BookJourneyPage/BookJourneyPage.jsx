@@ -10,6 +10,10 @@ import Navigation from '../../components/Navigation/Navigation';
 import DestinationsContext from '../../context/destinations/DestinationsContext';
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import { db } from '../../firebase.config';
+
+import { toast } from 'react-toastify';
 
 const BookJourneyPage = () => {
   const { destinationId } = useParams();
@@ -89,10 +93,20 @@ const BookJourneyPage = () => {
 
   // if loading then return spinner
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(formData);
+    const formDataCopy = {
+      ...formData,
+      timestamp: serverTimestamp(),
+      estimatedCosts: endPrice
+    };
+
+    await addDoc(collection(db, 'journeys'), formDataCopy);
+    // set loading to false
+    toast.success('Journey saved.');
+    navigate('/profile');
+    // console.log(docRef);
   };
 
   const onMutate = (e) => {
