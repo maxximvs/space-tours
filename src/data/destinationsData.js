@@ -2,6 +2,10 @@ import planet1 from '../assets/images/planet-1.png';
 import planet2 from '../assets/images/planet-2.png';
 import planet3 from '../assets/images/planet-3.png';
 
+import sqrPlanet1 from '../assets/images/curioso-photography-1.jpg';
+import sqrPlanet2 from '../assets/images/curioso-photography-2.jpg';
+import sqrPlanet3 from '../assets/images/curioso-photography-3.jpg';
+
 const destinationsData = [
   {
     id: 0,
@@ -9,8 +13,9 @@ const destinationsData = [
     firstDiscovered: '2045',
     discoveredBy: 'SpaceX',
     planetDescription:
-      'A planet full of life and turquoise lagoons. Great destination for lovers of nature.',
-    img: planet1
+      'A planet full of life and turquoise lagoons. Great destination for lovers of nature. The many magrove tree like plants make it a great impression on people who visit the planet.',
+    img: planet1,
+    sqrImg: sqrPlanet1
   },
   {
     id: 1,
@@ -19,7 +24,8 @@ const destinationsData = [
     discoveredBy: 'NASA',
     planetDescription:
       'Deserty planet with great vistas and unusual rock formation due to different gravitational forces.',
-    img: planet2
+    img: planet2,
+    sqrImg: sqrPlanet2
   },
   {
     id: 2,
@@ -28,7 +34,8 @@ const destinationsData = [
     discoveredBy: 'ESA',
     planetDescription:
       'Arid desert planet with a lava river flowing across the entire surface of the globe.',
-    img: planet3
+    img: planet3,
+    sqrImg: sqrPlanet3
   }
 ];
 
