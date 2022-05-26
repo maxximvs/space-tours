@@ -55,9 +55,7 @@ const BookJourneyPage = () => {
   const calculateResult = (numberOfPassengers, typeOfRocket) => {
     let rocketPrice;
     let finalPrice;
-    if (numberOfPassengers === 0) {
-      return;
-    }
+
     switch (typeOfRocket) {
       case 'slow':
         rocketPrice = 5000;
