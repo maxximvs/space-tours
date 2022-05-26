@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import styles from './destinationinfo.module.css';
 
+import { Link } from 'react-router-dom';
+
 import planetInfoBg from '../../assets/images/planet-info.png';
 import { FaTimes, FaArrowRight } from 'react-icons/fa';
 
@@ -23,8 +25,13 @@ const DestinationInfo = () => {
       <div className={styles.imgContainer}>
         <img src={planetInfoBg} alt='' />
         <FaTimes className={styles.closeBtn} onClick={toggleDestinationInfo} />
-        <FaArrowRight className={styles.arrowRightBtn} />
-        <button className={styles.journeyBtn}>Book a journey</button>
+        <Link
+          to={`/book-journey/${destinationId}`}
+          className={styles.journeyBtn}
+        >
+          <FaArrowRight className={styles.arrowRightBtn} />
+          Book a journey
+        </Link>
         <div className={styles.destinationInfoText}>
           {destinations
             .filter((destination) => destination.id === destinationId)
