@@ -6,19 +6,15 @@ import Navigation from '../../components/Navigation/Navigation';
 import DestinationInfo from '../../components/DestinationInfo/DestinationInfo';
 import Destinations from '../../components/Destinations/Destinations';
 
-import { DestinationsProvider } from '../../context/destinations/DestinationsContext';
-
 const DestinationsPage = () => {
   return (
-    <DestinationsProvider>
-      <div className='card-background'>
-        <div className={styles.main}>
-          <Navigation />
-          <Destinations />
-          <DestinationInfo />
-        </div>
+    <div className='card-background'>
+      <div className={styles.main}>
+        <Navigation />
+        <Destinations />
+        <DestinationInfo />
       </div>
-    </DestinationsProvider>
+    </div>
   );
 };
 

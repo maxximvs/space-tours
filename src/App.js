@@ -13,51 +13,62 @@ import ProfilePage from './pages/ProfilePage/ProfilePage';
 import SignInPage from './pages/SignInPage/SignInPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage/ForgotPasswordPage';
+import BookJourneyPage from './pages/BookJourneyPage/BookJourneyPage';
 
 import { ToastContainer, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { DestinationsProvider } from './context/destinations/DestinationsContext';
+
 function App() {
   return (
     <Router>
-      <div className='outer-background'></div>
-      <Routes>
-        <Route
-          exact
-          path='/'
-          element={
-            <>
-              <div className='card-background'>
-                <main>
-                  <Navigation />
-                  <Welcome />
-                  <Contact />
-                </main>
-              </div>
-            </>
-          }
-        ></Route>
-        <Route path='/destinations' element={<DestinationsPage />} />
-        <Route path='/profile' element={<PrivateRoute />}>
-          <Route path='/profile' element={<ProfilePage />} />
-        </Route>
-        <Route path='/sign-in' element={<SignInPage />} />
-        <Route path='/sign-up' element={<SignUpPage />} />
-        <Route path='/forgot-password' element={<ForgotPasswordPage />} />
-      </Routes>
-      <ToastContainer
-        theme='dark'
-        transition={Slide}
-        position='top-center'
-        autoClose={2000}
-        hideProgressBar={true}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
+      <DestinationsProvider>
+        <div className='outer-background'></div>
+        <Routes>
+          <Route
+            exact
+            path='/'
+            element={
+              <>
+                <div className='card-background'>
+                  <main>
+                    <Navigation />
+                    <Welcome />
+                    <Contact />
+                  </main>
+                </div>
+              </>
+            }
+          ></Route>
+          <Route path='/destinations' element={<DestinationsPage />} />
+          <Route path='/profile' element={<PrivateRoute />}>
+            <Route path='/profile' element={<ProfilePage />} />
+          </Route>
+          <Route path='/book-journey' element={<PrivateRoute />}>
+            <Route
+              path='/book-journey/:destinationId'
+              element={<BookJourneyPage />}
+            />
+          </Route>
+          <Route path='/sign-in' element={<SignInPage />} />
+          <Route path='/sign-up' element={<SignUpPage />} />
+          <Route path='/forgot-password' element={<ForgotPasswordPage />} />
+        </Routes>
+        <ToastContainer
+          theme='dark'
+          transition={Slide}
+          position='top-center'
+          autoClose={2000}
+          hideProgressBar={true}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+      </DestinationsProvider>
     </Router>
   );
 }
