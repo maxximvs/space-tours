@@ -5,7 +5,7 @@ import styles from './profilepage.module.css';
 
 import planetInfoBg from '../../assets/images/planet-info.png';
 
-import { FaUserEdit, FaUserCheck } from 'react-icons/fa';
+import { FaUserEdit, FaUserCheck, FaArrowRight } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 import Navigation from '../../components/Navigation/Navigation';
@@ -161,13 +161,21 @@ const ProfilePage = () => {
                     <p>{email}</p> */}
                   </div>
                 </div>
-                <button
+
+                <div className={styles.logoutBar}>
+                  <p className={styles.logoutText}>Logout</p>
+                  <button className={styles.logoutButton}>
+                    <FaArrowRight size={30} className={styles.arrowRightBtn} />
+                  </button>
+                </div>
+
+                {/* <button
                   type='button'
                   className={styles.logoutBtn}
                   onClick={onLogout}
                 >
                   Logout
-                </button>
+                </button> */}
               </div>
               <div className={styles.bookedJourneysHalf}>
                 {journeys?.length > 0 ? (
