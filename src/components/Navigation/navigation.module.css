@@ -24,3 +24,12 @@
 .active {
   font-size: 1.2rem;
 }
+
+.brandLogo {
+  display: flex;
+  align-items: center;
+}
+
+.brandLogoShuttle {
+  margin-left: 0.5rem;
+}
