@@ -165,7 +165,11 @@ const ProfilePage = () => {
                 <div className={styles.logoutBar}>
                   <p className={styles.logoutText}>Logout</p>
                   <button className={styles.logoutButton}>
-                    <FaArrowRight size={30} className={styles.arrowRightBtn} />
+                    <FaArrowRight
+                      size={30}
+                      className={styles.arrowRightBtn}
+                      onClick={onLogout}
+                    />
                   </button>
                 </div>
 
