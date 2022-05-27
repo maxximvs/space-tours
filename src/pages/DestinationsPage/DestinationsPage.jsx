@@ -11,6 +11,7 @@ const DestinationsPage = () => {
     <div className='card-background'>
       <div className={styles.main}>
         <Navigation />
+        <div className={styles.pageHeader}>Select your destination.</div>
         <Destinations />
         <DestinationInfo />
       </div>

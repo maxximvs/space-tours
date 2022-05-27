@@ -2,6 +2,15 @@
   outline: 1px solid white;
 
   display: grid;
-  grid-template-rows: 4rem 18rem auto;
+  grid-template-rows: 4rem 7rem 18rem auto;
   height: 100%;
+  color: white;
+}
+
+.pageHeader {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
