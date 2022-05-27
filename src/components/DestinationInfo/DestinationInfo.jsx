@@ -36,12 +36,14 @@ const DestinationInfo = () => {
           {destinations
             .filter((destination) => destination.id === destinationId)
             .map((destination) => (
-              <ul key={destination.id} className={styles.ul}>
-                <li>Planet: {destination.planetName}</li>
-                <li>First discovered: {destination.firstDiscovered}</li>
-                <li>Discovered by: {destination.discoveredBy}</li>
-                <li>{destination.planetDescription}</li>
-              </ul>
+              <div key={destination.id} className={styles.ul}>
+                <h1>{destination.planetName}</h1>
+                <p>First discovered: {destination.firstDiscovered}</p>
+                <p>Discovered by: {destination.discoveredBy}</p>
+                <p className={styles.planetDescriptionText}>
+                  {destination.planetDescription}
+                </p>
+              </div>
             ))}
         </div>
       </div>

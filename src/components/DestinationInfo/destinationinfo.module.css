@@ -40,10 +40,15 @@
   align-items: center;
 }
 
-.destinationInfoText .ul {
+.destinationInfoText div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.planetDescriptionText {
+  margin-top: 1rem;
+  padding: 0 1rem;
 }
 
 .hidden {

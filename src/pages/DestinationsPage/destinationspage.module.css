@@ -2,7 +2,7 @@
   outline: 1px solid white;
 
   display: grid;
-  grid-template-rows: 4rem 7rem 18rem auto;
+  grid-template-rows: 4rem 7rem 15.5rem auto;
   height: 100%;
   color: white;
 }
