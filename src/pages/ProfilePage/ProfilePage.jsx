@@ -9,22 +9,56 @@ import { FaUserEdit, FaUserCheck } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 import Navigation from '../../components/Navigation/Navigation';
+import BookedJourneys from '../../components/BookedJourneys/BookedJourneys';
 
 import { getAuth, updateProfile } from 'firebase/auth';
 import { db } from '../../firebase.config';
-import { updateDoc, doc } from 'firebase/firestore';
+import {
+  updateDoc,
+  doc,
+  collection,
+  getDocs,
+  query,
+  where,
+  orderBy,
+  deleteDoc
+} from 'firebase/firestore';
 
 const ProfilePage = () => {
   const auth = getAuth();
   const [changeUserData, setChangeUserData] = useState(false);
+  const [journeys, setJourneys] = useState(null);
+  // create loading state here
   const [formData, setFormData] = useState({
     name: auth.currentUser.displayName,
     email: auth.currentUser.email
   });
-
   const { name, email } = formData;
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchUserJourneys = async () => {
+      const journeysRef = collection(db, 'journeys');
+      const q = query(
+        journeysRef,
+        where('userRef', '==', auth.currentUser.uid),
+        orderBy('timestamp', 'desc')
+      );
+      const querySnap = await getDocs(q);
+      let journeys = [];
+      querySnap.forEach((doc) => {
+        return journeys.push({
+          id: doc.id,
+          data: doc.data()
+        });
+      });
+      setJourneys(journeys);
+      // set loading to false here
+    };
+
+    fetchUserJourneys();
+  }, [auth.currentUser.uid]);
 
   const onLogout = () => {
     auth.signOut();
@@ -51,6 +85,18 @@ const ProfilePage = () => {
       ...prevState,
       [e.target.id]: e.target.value
     }));
+  };
+
+  const onDelete = async (journeyId) => {
+    if (window.confirm('Are you sure you want to delete?')) {
+      await deleteDoc(doc(db, 'journeys', journeyId));
+
+      const updatedJourneys = journeys.filter(
+        (journey) => journey.id !== journeyId
+      );
+      setJourneys(updatedJourneys);
+      toast.success('Successfully deleted journey.');
+    }
   };
 
   return (
@@ -123,7 +169,13 @@ const ProfilePage = () => {
                   Logout
                 </button>
               </div>
-              <div className={styles.bookedJourneysHalf}>Booked Journeys</div>
+              <div className={styles.bookedJourneysHalf}>
+                {journeys?.length > 0 ? (
+                  <BookedJourneys journeys={journeys} onDelete={onDelete} />
+                ) : (
+                  'No journeys scheduled yet.'
+                )}
+              </div>
             </div>
           </div>
         </div>
