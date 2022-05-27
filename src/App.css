@@ -71,3 +71,9 @@ a {
   color: #fff;
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
