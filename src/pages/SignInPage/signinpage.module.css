@@ -45,6 +45,7 @@
   width: 20rem;
   border-radius: 3px;
   border: none;
+  padding: 1rem;
 }
 
 .emailInput:focus,
