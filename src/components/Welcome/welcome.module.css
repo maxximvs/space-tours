@@ -1,6 +1,6 @@
 .welcome {
   color: white;
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
 
   display: flex;
   justify-content: space-around;
@@ -8,9 +8,10 @@
 }
 
 .astronautPicture {
-  outline: 1px solid white;
-  height: 400px;
-  width: 230px;
+  /* outline: 1px solid white; */
+  height: 500px;
+  width: 280px;
+  margin-left: 5rem;
 
   animation: float 3000ms;
   animation-iteration-count: 10;
@@ -23,7 +24,7 @@
 }
 
 .mainInfo {
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
 
   width: 500px;
   height: 400px;
@@ -35,16 +36,17 @@
 }
 
 .mainInfo h1 {
-  font-size: 4rem;
-  /* margin-top: 3rem; */
-  margin-right: 4rem;
+  font-size: 5rem;
+  margin-top: -3rem;
+  margin-left: -3rem;
+  margin-right: 6rem;
   font-weight: 300;
 }
 
 .mainInfo p {
   line-height: 1;
   width: 250px;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 @keyframes float {
