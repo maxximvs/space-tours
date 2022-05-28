@@ -18,7 +18,9 @@ const Navigation = () => {
         <li className={styles.li}>
           <NavLink
             to='/destinations'
-            className={(navData) => (navData.isActive ? styles.active : null)}
+            className={(navData) =>
+              navData.isActive ? styles.active : styles.navLink
+            }
           >
             Destinations
           </NavLink>
@@ -26,7 +28,9 @@ const Navigation = () => {
         <li className={styles.li}>
           <NavLink
             to='/profile'
-            className={(navData) => (navData.isActive ? styles.active : null)}
+            className={(navData) =>
+              navData.isActive ? styles.active : styles.navLink
+            }
           >
             Profile
           </NavLink>

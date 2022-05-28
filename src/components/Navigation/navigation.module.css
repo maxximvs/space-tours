@@ -21,8 +21,56 @@
   padding: 0 2rem;
 }
 
+.navLink {
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.navLink::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 3px;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.navLink:hover {
+  color: rgb(0, 0, 0);
+}
+
+.navLink:hover::before,
+.navLink:hover::after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
 .active {
-  font-size: 1.2rem;
+  background-color: #ffffff;
+  color: #000;
+  padding-bottom: 0.25rem;
+  border-radius: 3px;
 }
 
 .brandLogo {
