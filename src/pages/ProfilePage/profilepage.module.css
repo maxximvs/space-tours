@@ -1,5 +1,5 @@
 .main {
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
 
   display: grid;
   grid-template-rows: 4rem auto;
@@ -46,6 +46,7 @@
   height: 25%;
 
   position: relative;
+  margin-top: 0.5rem;
 }
 
 .userDataDiv img {

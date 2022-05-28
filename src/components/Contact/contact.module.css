@@ -1,6 +1,6 @@
 .contact {
   color: white;
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
 
   display: flex;
   justify-content: end;
@@ -8,7 +8,7 @@
 }
 
 .contactList {
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
 
   width: 40rem;
 

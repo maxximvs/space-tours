@@ -1,5 +1,5 @@
 .nav {
-  outline: 1px solid #fff;
+  /* outline: 1px solid #fff; */
 
   padding-left: 4rem;
 
@@ -11,7 +11,7 @@
 }
 
 .ul {
-  outline: 1px solid #fff;
+  /* outline: 1px solid #fff; */
 
   list-style: none;
   display: flex;
