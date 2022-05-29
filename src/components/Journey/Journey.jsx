@@ -10,7 +10,11 @@ const Journey = ({ journey, onDelete }) => {
       <h4>{journey.name}</h4>
       <p>Date: {journey.date}</p>
       <p>Number of Passengers: {journey.numberOfPassengers}</p>
-      <p>Type of Rocket: {journey.typeOfRocket}</p>
+      <p>
+        Type of Rocket:{' '}
+        {journey['typeOfRocket'].charAt(0).toUpperCase() +
+          journey['typeOfRocket'].slice(1)}
+      </p>
       <p>Estimated Costs: ${journey.estimatedCosts}</p>
 
       {/* <FaTrash className={styles.deleteIcon} /> */}
