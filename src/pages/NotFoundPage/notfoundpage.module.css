@@ -1,0 +1,23 @@
+.main {
+  color: white;
+  display: grid;
+  grid-template-rows: 4rem auto;
+  height: 100%;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.backToWelcomePageBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  width: 20rem;
+  font-size: 1.2rem;
+}

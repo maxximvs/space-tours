@@ -14,6 +14,7 @@ import SignInPage from './pages/SignInPage/SignInPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage/ForgotPasswordPage';
 import BookJourneyPage from './pages/BookJourneyPage/BookJourneyPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 import { ToastContainer, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -54,6 +55,7 @@ function App() {
           <Route path='/sign-in' element={<SignInPage />} />
           <Route path='/sign-up' element={<SignUpPage />} />
           <Route path='/forgot-password' element={<ForgotPasswordPage />} />
+          <Route path='/*' element={<NotFoundPage />} />
         </Routes>
         <ToastContainer
           theme='dark'
