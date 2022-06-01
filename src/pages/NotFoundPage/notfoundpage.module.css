@@ -21,3 +21,18 @@
   width: 20rem;
   font-size: 1.2rem;
 }
+
+/* media queries */
+
+@media (max-width: 40rem) {
+  .main {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 30rem) {
+  .notFound {
+    padding: 0 1rem;
+    text-align: center;
+  }
+}

@@ -2,6 +2,7 @@
   margin: 0;
   width: 100%;
   height: 100%;
+  /* min-height: 100%; */
   position: absolute;
   top: 0;
   left: 0;
@@ -14,9 +15,9 @@
 
 .card-background {
   width: calc(100% - 8rem);
-  height: calc(100vh - 10rem);
-  min-height: 40rem;
-  max-width: 1280px;
+  min-height: calc(100vh - 10rem);
+  /* min-height: 40rem; */
+  max-width: 80rem;
   box-shadow: 0 0 50px 5px #000000b8;
   margin: 5rem auto;
   z-index: 1;
@@ -26,4 +27,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 64rem) {
+  .card-background {
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 40rem) {
+  .card-background {
+    /* height: 100vh; */
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 25.75rem) {
+  .card-background {
+    width: 100%;
+  }
 }

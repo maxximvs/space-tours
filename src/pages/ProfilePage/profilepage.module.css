@@ -22,7 +22,7 @@
 }
 
 .pageBody {
-  /* outline: 2px solid yellow; */
+  /* outline: 1px solid yellow; */
   width: 100%;
   height: 100%;
 
@@ -43,7 +43,9 @@
   /* outline: 1px solid white; */
 
   width: 75%;
-  height: 25%;
+  /* height: 70%; */
+  min-height: 9rem;
+  /* max-height: 10rem; */
 
   position: relative;
   margin-top: 0.5rem;
@@ -72,7 +74,7 @@
 }
 
 .userDataText {
-  /* outline: 1px solid white; */
+  /* outline: 1px solid orange; */
 
   position: absolute;
   top: 0;
@@ -132,4 +134,62 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* media queries */
+
+@media (max-width: 49.5rem) {
+  .userDataDiv {
+    width: 85%;
+  }
+}
+
+@media (max-width: 40rem) {
+  .pageBody {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main {
+    height: 100vh;
+  }
+
+  .userDataHalf {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .userDataDiv {
+    height: 10.5rem;
+  }
+
+  .userDataText form {
+    /* position: static; */
+    /* margin: 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .userDataTextName,
+  .userDataTextNameActive,
+  .userDataTextEmail,
+  .userDataTextEmailActive {
+    width: 75%;
+  }
+
+  .bookedJourneysHalf {
+    width: 100%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .userDataDiv {
+    height: 75%;
+  }
+
+  .userDataText form {
+    margin-top: 0.5rem;
+  }
 }

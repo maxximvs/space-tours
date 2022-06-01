@@ -208,9 +208,15 @@ const BookJourneyPage = () => {
                   </div>
                 </div>
                 <div className={styles.journeyInfoPlanetInfoHalf}>
-                  <h1>{selectedDestination.planetName.toUpperCase()}</h1>
-                  <p>First Discovered: {selectedDestination.firstDiscovered}</p>
-                  <p>Discovered By: {selectedDestination.discoveredBy}</p>
+                  <h1 className={styles.journeyInfoPlanetName}>
+                    {selectedDestination.planetName.toUpperCase()}
+                  </h1>
+                  <div className={styles.discoveredDiv}>
+                    <p>
+                      First Discovered: {selectedDestination.firstDiscovered}
+                    </p>
+                    <p>Discovered By: {selectedDestination.discoveredBy}</p>
+                  </div>
                   <p className={styles.planetDescriptionText}>
                     {selectedDestination.planetDescription}
                   </p>

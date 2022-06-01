@@ -10,7 +10,7 @@ const Navigation = () => {
     <nav className={styles.nav}>
       <div>
         <NavLink to='/' className={styles.brandLogo}>
-          <h3>Space Tours</h3>
+          <h3 className={styles.spaceToursBrandName}>Space Tours</h3>
           <FaSpaceShuttle size={40} className={styles.brandLogoShuttle} />
         </NavLink>
       </div>

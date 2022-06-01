@@ -10,8 +10,8 @@
   animation: fadeIn 0.2s ease-in;
 }
 
-.destinationInfo .imgContainer {
-  /* outline: 1px solid white; */
+.imgContainer {
+  /* outline: 1px solid yellow; */
   height: 75%;
   width: 50%;
 
@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.destinationInfo .imgContainer img {
+.imgContainer img {
   height: 100%;
   width: 100%;
 }
@@ -108,3 +108,31 @@
     display: none;
   }
 } */
+
+@media (max-width: 64rem) {
+  .imgContainer {
+    width: 75%;
+  }
+}
+
+@media (max-width: 40rem) {
+  .imgContainer {
+    height: 65%;
+  }
+
+  .journeyBtn {
+    right: 9%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .imgContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 25.75rem) {
+  .imgContainer {
+    width: 95%;
+  }
+}

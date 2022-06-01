@@ -2,7 +2,7 @@
   /* outline: 1px solid white; */
 
   display: grid;
-  grid-template-rows: 4rem 7rem 15.5rem auto;
+  grid-template-rows: 4rem 7rem 13rem 25rem;
   height: 100%;
   color: white;
 }
@@ -13,4 +13,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* media queries */
+
+@media (max-width: 49.5rem) {
+  .main {
+    grid-template-rows: 4rem 6rem auto 28rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .main {
+    grid-template-rows: 4rem 6rem 14rem 28rem;
+    height: 100%;
+  }
 }

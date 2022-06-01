@@ -1,19 +1,20 @@
 .contact {
   color: white;
-  /* outline: 1px solid white; */
+  /* outline: 2px solid white; */
 
   display: flex;
-  justify-content: end;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .contactList {
-  /* outline: 1px solid white; */
+  /* outline: 2px solid green; */
 
   width: 40rem;
 
   display: flex;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 .office,
@@ -32,4 +33,43 @@
 h3 {
   font-weight: 300;
   text-transform: uppercase;
+}
+
+/* media queries */
+
+@media (max-width: 40rem) {
+  .contact {
+    flex-direction: column;
+  }
+  .contactList {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .office,
+  .getInTouch {
+    margin: 0rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .contactList {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .office,
+  .getInTouch {
+    width: 100%;
+    text-align: center;
+  }
+
+  .office {
+    margin-top: -2rem;
+  }
+
+  .getInTouch {
+    margin-top: 1rem;
+  }
 }

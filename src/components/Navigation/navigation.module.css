@@ -81,3 +81,36 @@
 .brandLogoShuttle {
   margin-left: 0.5rem;
 }
+
+/* media queries */
+
+@media (max-width: 40rem) {
+  .nav {
+    padding-left: 0;
+  }
+  .spaceToursBrandName {
+    display: none;
+  }
+}
+
+@media (max-width: 30rem) {
+  .nav {
+    justify-content: space-around;
+  }
+
+  .li {
+    padding: 0;
+  }
+
+  .li:nth-of-type(2) {
+    margin-left: 5rem;
+  }
+
+  .brandLogo {
+    justify-content: flex-start;
+  }
+
+  .brandLogoShuttle {
+    margin: 0;
+  }
+}
