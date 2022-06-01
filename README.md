@@ -1,4 +1,32 @@
-# Getting Started with Create React App
+## How I worked on this project
+
+With this project, I set out to simulate a professional, although in its scope, rudimentary workflow.
+
+- I sketched out a basic style direction in Figma:
+- I also tried to organize the tasks on Trello:
+- Finally I tracked my progress on Github
+
+## What it is about
+
+In this project, I tried to illustrate using some of the most common features of CSS, React and Firebase.
+
+- The project is a mockup web app for a company specializing in space tourism
+- It utilizes CSS Modules with a responsive design for multiple screen sizes
+- React to manage state and routing
+- Firebase to handle authentication and store / retrieve user data like login credentials and booked journeys
+
+## What I would continue working on
+
+Now that the project is in a presentable state, I would change or keep working on the following things:
+
+- Plan the design more thoroughly. As it is a practice project, I felt like I was coming up with some design decisions on the go. In hindsight, I would try to lay it out more systematically.
+- Rework some of the CSS code, especially code that I could've used in a more efficient way.
+- JavaScript logic that could be handled more efficiently.
+- And eventually rewrite the project using TypeScript.
+
+I haven't changed anything in the original readme, you can find it right below this.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
