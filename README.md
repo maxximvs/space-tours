@@ -2,8 +2,8 @@
 
 With this project, I set out to simulate a professional, although in its scope, rudimentary workflow.
 
-- I sketched out a basic style direction in Figma:
-- I also tried to organize the tasks on Trello:
+- I sketched out a basic style direction in Figma
+- I also tried to organize the tasks on Trello
 - Finally I tracked my progress on Github
 
 ## What it is about
