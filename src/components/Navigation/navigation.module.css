@@ -1,18 +1,12 @@
 .nav {
-  /* outline: 1px solid #fff; */
-
   padding-left: 4rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   height: 4rem;
 }
 
 .ul {
-  /* outline: 1px solid #fff; */
-
   list-style: none;
   display: flex;
 }

@@ -1,17 +1,12 @@
 .contact {
   color: white;
-  /* outline: 2px solid white; */
-
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
 .contactList {
-  /* outline: 2px solid green; */
-
   width: 40rem;
-
   display: flex;
   justify-content: space-around;
   margin-bottom: 2rem;

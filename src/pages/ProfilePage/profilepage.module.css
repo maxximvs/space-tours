@@ -1,10 +1,7 @@
 .main {
-  /* outline: 1px solid white; */
-
   display: grid;
   grid-template-rows: 4rem auto;
   height: 100%;
-
   color: white;
   overflow: scroll;
 }
@@ -22,31 +19,22 @@
 }
 
 .pageBody {
-  /* outline: 1px solid yellow; */
   width: 100%;
   height: 100%;
-
   display: flex;
   justify-content: space-around;
 }
 
 .userDataHalf {
-  /* outline: 2px solid green; */
   width: 35%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .userDataDiv {
-  /* outline: 1px solid white; */
-
   width: 75%;
-  /* height: 70%; */
   min-height: 9rem;
-  /* max-height: 10rem; */
-
   position: relative;
   margin-top: 0.5rem;
 }
@@ -58,7 +46,6 @@
 
 .userDataLabel {
   font-size: 1.2rem;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -74,8 +61,6 @@
 }
 
 .userDataText {
-  /* outline: 1px solid orange; */
-
   position: absolute;
   top: 0;
   bottom: 0;
@@ -93,7 +78,6 @@
   padding: 0.5rem;
   border: none;
   border-radius: 3px;
-  /* font-family: inherit; */
   background-color: rgba(66, 66, 66, 0.651);
 }
 
@@ -108,12 +92,9 @@
 }
 
 .logoutBar {
-  /* outline: 1px solid white; */
-
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
-
   width: 70%;
 }
 
@@ -129,7 +110,6 @@
 }
 
 .bookedJourneysHalf {
-  /* outline: 2px solid orange; */
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -164,8 +144,6 @@
   }
 
   .userDataText form {
-    /* position: static; */
-    /* margin: 0; */
     display: flex;
     flex-direction: column;
     align-items: center;

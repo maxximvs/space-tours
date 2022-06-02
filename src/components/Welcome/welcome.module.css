@@ -1,18 +1,14 @@
 .welcome {
   color: white;
-  /* outline: 1px solid white; */
-
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .astronautPicture {
-  /* outline: 1px solid white; */
   height: 31rem;
   width: 17.5rem;
   margin-left: 5rem;
-
   animation: float 3000ms;
   animation-iteration-count: 10;
 }
@@ -24,11 +20,8 @@
 }
 
 .mainInfo {
-  /* outline: 1px solid white; */
-
   width: 50%;
   height: 75%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;

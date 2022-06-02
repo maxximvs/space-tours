@@ -1,24 +1,18 @@
 .destinationInfo {
-  /* outline: 1px solid white; */
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: relative;
-
   animation: fadeIn 0.2s ease-in;
 }
 
 .imgContainer {
-  /* outline: 1px solid yellow; */
   height: 75%;
   width: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: relative;
 }
 
@@ -28,13 +22,9 @@
 }
 
 .destinationInfoText {
-  /* outline: 1px solid yellow; */
-
   position: absolute;
-
   height: 70%;
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,9 +43,6 @@
 
 .hidden {
   display: none;
-
-  /* animation: fadeOut 0.2s ease-in forwards; */
-  /* this runs the animation right away when the page loads */
 }
 
 .closeBtn,
@@ -94,20 +81,6 @@
     opacity: 1;
   }
 }
-
-/* @keyframes fadeOut {
-  0% {
-    opacity: 1;
-    display: block;
-  }
-  99% {
-    display: none;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-} */
 
 @media (max-width: 64rem) {
   .imgContainer {

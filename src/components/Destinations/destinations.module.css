@@ -1,11 +1,9 @@
 .destinations {
-  /* outline: 3px solid white; */
   display: flex;
   justify-content: space-around;
 }
 
 .destinations img {
-  /* outline: 1px solid white; */
   height: 100%;
   width: 100%;
 }

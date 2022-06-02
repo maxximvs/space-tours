@@ -1,6 +1,4 @@
 .main {
-  /* outline: 1px solid white; */
-
   display: grid;
   grid-template-rows: 4rem 7rem 13rem 25rem;
   height: 100%;
