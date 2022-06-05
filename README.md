@@ -3,12 +3,12 @@
 With this project, I set out to simulate a professional, although in its scope, rudimentary workflow.
 
 - I sketched out a basic style direction in Figma
-- I also tried to organize the tasks on Trello
+- Organized the tasks on Trello
 - Finally I tracked my progress on Github
 
 ## What it is about
 
-In this project, I tried to illustrate using some of the most common features of CSS, React and Firebase.
+In this project, I tried to illustrate using some of the more common features of CSS, React and Firebase.
 
 - The project is a mockup web app for a company specializing in space tourism
 - It utilizes CSS Modules with a responsive design for multiple screen sizes
@@ -19,7 +19,7 @@ In this project, I tried to illustrate using some of the most common features of
 
 Now that the project is in a presentable state, I would change or keep working on the following things:
 
-- Plan the design more thoroughly. As it is a practice project, I felt like I was coming up with some design decisions on the go. In hindsight, I would try to lay it out more systematically.
+- Plan the design more thoroughly. As it is a practice project, I felt like I was coming up with some design decisions on the go.
 - Rework some of the CSS code, especially code that I could've used in a more efficient way.
 - JavaScript logic that could be handled more efficiently.
 - And eventually rewrite the project using TypeScript.
