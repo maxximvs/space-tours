@@ -79,6 +79,8 @@
   border: none;
   border-radius: 3px;
   background-color: rgba(66, 66, 66, 0.651);
+  color: white;
+  font-family: inherit;
 }
 
 .userDataTextEmail,
